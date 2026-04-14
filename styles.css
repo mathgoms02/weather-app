@@ -20,6 +20,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 40px;
+  grid-column-gap: 100px;
 }
 
 .navbar-container {
@@ -139,6 +140,54 @@ body {
 .weather-details-container .weather-detail-item > div > p > span {
   font-size: 0.75rem;
   margin-left: -5px;
+}
+
+/* Previsão semanal */
+.weekly-forecast-container {
+  background: #fff;
+  border-radius: 40px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.weekly-forecast-container .day-weather-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weekly-forecast-container .day-weather-item > p,
+.weekly-forecast-container .day-weather-item > img,
+.weekly-forecast-container .day-weather-item > div {
+  flex: 1;
+}
+
+.weekly-forecast-container .day-weather-item > p {
+  font-weight: 500;
+  color: #8f8f8f;
+}
+
+.weekly-forecast-container .day-weather-item > div {
+  display: flex;
+  align-items: center;
+}
+
+.weekly-forecast-container .day-weather-item > div > p:first-child {
+  color: #2a394f;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.weekly-forecast-container .day-weather-item > div > p:last-child {
+  color: #8f8f8f;
+  font-weight: 500;
+}
+
+.weekly-forecast-container .day-weather-item > img {
+  width: 60px;
+  height: 60px;
 }
 
 /* Utilidades */
